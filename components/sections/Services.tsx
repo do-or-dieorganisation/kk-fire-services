@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import {
   Flame,
   Shield,
@@ -77,18 +78,22 @@ export default function Services() {
           {services.map((service, idx) => {
             const Icon = service.icon;
             return (
-              <div
+              <Link
                 key={idx}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100 hover:border-orange-300"
+                href="/services"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100 hover:border-orange-300 block group"
               >
-                <div className="text-orange-600 mb-4">
+                <div className="text-orange-600 mb-4 group-hover:scale-110 transition">
                   <Icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {service.title}
                 </h3>
-                <p className="text-gray-600">{service.desc}</p>
-              </div>
+                <p className="text-gray-600 mb-4">{service.desc}</p>
+                <span className="text-orange-600 font-semibold text-sm inline-flex items-center">
+                  Learn More →
+                </span>
+              </Link>
             );
           })}
         </div>
