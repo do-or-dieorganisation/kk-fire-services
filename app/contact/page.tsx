@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Header from
+import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Contact from '@/components/Contact';
 import WhatsAppButton from '@/components/ui/WhatsAppbutton';
