@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Contact from '@/components/Contact';
-import WhatsAppButton from '@/components/ui/WhatsAppbutton';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
