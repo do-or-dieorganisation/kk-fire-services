@@ -27,10 +27,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/kk-fire-logo.jpeg"
+                src="/UPdated-logo.jpeg"
                 alt="KK Fire Services Logo"
-                width={60}
-                height={50}
+                width={100}
+                height={100}
                 className="object-contain"
               />
               <span className="text-xl font-bold">KK Fire Services</span>

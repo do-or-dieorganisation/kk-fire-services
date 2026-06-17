@@ -88,7 +88,7 @@ export default function Header() {
             className="flex items-center gap-3 group"
           >
             <Image
-              src="/KK-Fireservices-logo.png"
+              src="/UPdated-logo.jpeg"
               alt="KK Fire Services Logo"
               width={100}
               height={100}
