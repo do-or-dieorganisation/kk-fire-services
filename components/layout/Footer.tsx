@@ -44,6 +44,7 @@ export default function Footer() {
               Established 2015 • Pune, Maharashtra
             </p>
           </div>
+
           <div>
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
@@ -56,6 +57,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
           <div>
             <h4 className="font-bold mb-4">Our Services</h4>
             <ul className="space-y-2 text-gray-400">
@@ -64,6 +66,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
@@ -74,11 +77,17 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+
+        {/* Unified footer block */}
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} KK Fire Services. All rights
-            reserved. | Unity is Strength - When there is teamwork and
-            collaboration, wonderful things can be achieved
+            &copy; {new Date().getFullYear()} KK Fire Services. All rights reserved.
+          </p>
+          <p className="mt-2">
+            Unity is Strength – When there is teamwork and collaboration, wonderful things can be achieved
+          </p>
+          <p className="mt-2">
+            UDYAM Registration No: UDYAM-MH-26-0205628
           </p>
         </div>
       </div>

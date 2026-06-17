@@ -151,7 +151,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </div>
+        </div>  
       </div>
     </section>
   );
