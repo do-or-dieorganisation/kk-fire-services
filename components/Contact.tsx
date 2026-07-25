@@ -64,7 +64,7 @@ export default function Contact() {
                 <div>
                   <p className="font-semibold text-gray-900">Phone</p>
                   <p className="text-gray-600">+91 9922851263</p>
-                  <p className="text-gray-600">+91 8983861237</p>
+                  <p className="text-gray-600">+91 9284361712</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -151,7 +151,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </div>  
+        </div>
       </div>
     </section>
   );
