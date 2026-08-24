@@ -19,14 +19,45 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
+  const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('http://localhost:8080/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to submit contact form');
+    }
+
+    const data = await response.json();
+
+    console.log('Contact submitted successfully:', data);
+
     alert(
       'Thank you for your message! We will get back to you within 24 hours.'
     );
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
+
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
+
+  } catch (error) {
+    console.error('Error submitting contact form:', error);
+
+    alert(
+      'Unable to send your message. Please try again later.'
+    );
+  }
+};
 
   return (
     <section id="contact" className="py-20 bg-white">
