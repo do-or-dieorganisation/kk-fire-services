@@ -15,7 +15,7 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-Complete fire sprotection Solutions            <br />
+Complete Fire Protection Solutions            <br />
             for safer buildings
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
