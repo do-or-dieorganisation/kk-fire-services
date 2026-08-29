@@ -14,6 +14,7 @@ import FAQ from '@/components/sections/Faq';
 import Contact from '@/components/Contact';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/ui/WhatsAppButton';
+import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <AMC />
       <Certifications />
       <Gallery />
+      <Projects />
       <Clients />
       <Testimonials />
       <FAQ />
