@@ -14,20 +14,14 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-slate-950 text-white"
     >
-      {/* ========================================================= */}
-      {/* BACKGROUND */}
-      {/* ========================================================= */}
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -right-32 -top-32 h-72 w-72 rounded-full bg-orange-600/15 blur-3xl sm:-right-40 sm:-top-40 sm:h-[500px] sm:w-[500px]" />
 
-      <div className="absolute inset-0">
-        {/* Orange glow - top right */}
-        <div className="absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-orange-600/15 blur-3xl" />
+        <div className="absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-orange-500/10 blur-3xl sm:-bottom-40 sm:-left-40 sm:h-[450px] sm:w-[450px]" />
 
-        {/* Orange glow - bottom left */}
-        <div className="absolute -bottom-40 -left-40 h-[450px] w-[450px] rounded-full bg-orange-500/10 blur-3xl" />
-
-        {/* Technical grid */}
         <div
-          className="absolute inset-0 opacity-40"
+          className="absolute inset-0 opacity-30 sm:opacity-40"
           style={{
             backgroundImage:
               'linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px)',
@@ -36,21 +30,15 @@ export default function Hero() {
         />
       </div>
 
-      {/* ========================================================= */}
-      {/* MAIN CONTAINER */}
-      {/* ========================================================= */}
-
+      {/* Main */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-8 py-10 sm:gap-10 sm:py-14 lg:min-h-[calc(100vh-80px)] lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:py-20">
+        <div className="grid items-center gap-8 py-8 sm:gap-10 sm:py-14 lg:min-h-[calc(100vh-80px)] lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:py-20">
 
-          {/* ===================================================== */}
-          {/* LEFT CONTENT */}
-          {/* ===================================================== */}
-
+          {/* LEFT */}
           <div className="max-w-2xl">
 
             {/* Trust Badge */}
-            <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-2 text-xs font-medium text-orange-200 sm:mb-7 sm:px-4 sm:text-sm">
+            <div className="mb-4 inline-flex max-w-full items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-3 py-1.5 text-[10px] font-medium text-orange-200 sm:mb-7 sm:px-4 sm:py-2 sm:text-sm">
               <ShieldCheck className="h-4 w-4 shrink-0 text-orange-400" />
 
               <span>ISO 9001:2015 Certified</span>
@@ -60,8 +48,9 @@ export default function Hero() {
               <span>Established 2015</span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-[2.65rem] font-bold leading-[0.98] tracking-tight sm:text-5xl sm:leading-[1.02] lg:text-[4.5rem]">
+            {/* Heading */}
+            <h1 className="text-[2rem] font-bold leading-[1.03] tracking-tight sm:text-5xl sm:leading-[1.02] lg:text-[4.5rem]">
+
               Complete Fire
 
               <span className="block text-orange-500">
@@ -72,108 +61,95 @@ export default function Hero() {
                 Solutions
               </span>
 
-              <span className="mt-2 block text-white/70">
+              <span className="mt-1 block text-white/70 sm:mt-2">
                 for Safer Buildings
               </span>
+
             </h1>
 
             {/* Description */}
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:mt-7 sm:text-lg sm:leading-8">
+            <p className="mt-4 max-w-xl text-[15px] leading-6 text-slate-300 sm:mt-7 sm:text-lg sm:leading-8">
               End-to-end fire protection systems engineered for
               residential, commercial and industrial buildings —
               from design and consultancy to installation,
               commissioning and maintenance.
             </p>
 
-            {/* ===================================================== */}
-            {/* SERVICES */}
-            {/* ===================================================== */}
+            {/* Services */}
+            <div className="mt-5 grid grid-cols-1 gap-2 sm:mt-7 sm:grid-cols-2 sm:gap-3">
 
-            <div className="mt-6 grid grid-cols-1 gap-2.5 sm:mt-7 sm:grid-cols-2 sm:gap-3">
-
-              <div className="flex items-center gap-2 text-[15px] text-slate-300 sm:text-sm">
+              <div className="flex items-center gap-2 text-sm text-slate-300">
                 <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
                 Design & Consultancy
               </div>
 
-              <div className="flex items-center gap-2 text-[15px] text-slate-300 sm:text-sm">
+              <div className="flex items-center gap-2 text-sm text-slate-300">
                 <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
                 Supply & Installation
               </div>
 
-              <div className="flex items-center gap-2 text-[15px] text-slate-300 sm:text-sm">
+              <div className="flex items-center gap-2 text-sm text-slate-300">
                 <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
                 Testing & Commissioning
               </div>
 
-              <div className="flex items-center gap-2 text-[15px] text-slate-300 sm:text-sm">
+              <div className="flex items-center gap-2 text-sm text-slate-300">
                 <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
                 AMC & Maintenance
               </div>
 
             </div>
 
-            {/* ===================================================== */}
-            {/* CTA BUTTONS */}
-            {/* ===================================================== */}
+            {/* CTA */}
+            <div className="mt-6 flex flex-col gap-2.5 sm:mt-9 sm:flex-row sm:gap-3">
 
-            <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
-
-              {/* Primary CTA */}
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center rounded-lg bg-orange-500 px-6 py-3.5 font-semibold text-white shadow-xl shadow-orange-500/20 transition-all duration-300 hover:bg-orange-600 hover:shadow-orange-500/30 sm:px-7 sm:py-4"
+                className="group inline-flex w-full items-center justify-center rounded-lg bg-orange-500 px-5 py-3 font-semibold text-white shadow-xl shadow-orange-500/20 transition-all duration-300 hover:bg-orange-600 sm:w-auto sm:px-7 sm:py-4"
               >
                 Get a Free Consultation
 
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
 
-              {/* Secondary CTA */}
               <a
                 href="#services"
-                className="inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3.5 font-semibold text-white transition-all duration-300 hover:border-orange-500/50 hover:bg-white/10 sm:px-7 sm:py-4"
+                className="inline-flex w-full items-center justify-center rounded-lg border border-white/15 bg-white/5 px-5 py-3 font-semibold text-white transition-all duration-300 hover:border-orange-500/50 hover:bg-white/10 sm:w-auto sm:px-7 sm:py-4"
               >
                 Explore Services
               </a>
 
             </div>
 
-            {/* ===================================================== */}
-            {/* TRUST STATS */}
-            {/* ===================================================== */}
+            {/* Trust Stats */}
+            <div className="mt-7 grid grid-cols-3 border-t border-white/10 pt-4 sm:mt-10 sm:pt-7">
 
-            <div className="mt-8 grid grid-cols-3 border-t border-white/10 pt-5 sm:mt-10 sm:pt-7">
-
-              {/* Established */}
-              <div className="pr-3 sm:pr-4">
-                <p className="text-lg font-bold text-white sm:text-xl">
+              <div className="min-w-0 pr-2 sm:pr-4">
+                <p className="text-base font-bold text-white sm:text-xl">
                   2015
                 </p>
 
-                <p className="mt-1 text-[11px] text-slate-400 sm:text-xs">
+                <p className="mt-1 text-[10px] leading-4 text-slate-400 sm:text-xs">
                   Established
                 </p>
               </div>
 
-              {/* Service */}
-              <div className="border-l border-white/10 px-3 sm:px-4">
-                <p className="text-lg font-bold text-white sm:text-xl">
+              <div className="min-w-0 border-l border-white/10 px-2 sm:px-4">
+                <p className="text-base font-bold text-white sm:text-xl">
                   24hr
                 </p>
 
-                <p className="mt-1 text-[11px] text-slate-400 sm:text-xs">
+                <p className="mt-1 text-[10px] leading-4 text-slate-400 sm:text-xs">
                   Service Response
                 </p>
               </div>
 
-              {/* Coverage */}
-              <div className="border-l border-white/10 pl-3 sm:pl-4">
-                <p className="text-lg font-bold text-white sm:text-xl">
+              <div className="min-w-0 border-l border-white/10 pl-2 sm:pl-4">
+                <p className="text-base font-bold text-white sm:text-xl">
                   Pune
                 </p>
 
-                <p className="mt-1 text-[11px] text-slate-400 sm:text-xs">
+                <p className="mt-1 text-[10px] leading-4 text-slate-400 sm:text-xs">
                   & Beyond
                 </p>
               </div>
@@ -182,26 +158,17 @@ export default function Hero() {
 
           </div>
 
-          {/* ===================================================== */}
           {/* RIGHT — PROJECT IMAGE */}
-          {/* ===================================================== */}
-
           <div className="relative">
 
-            {/* Decorative rings */}
-            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full border border-orange-500/20" />
+            <div className="absolute -right-8 -top-8 hidden h-32 w-32 rounded-full border border-orange-500/20 sm:block" />
 
-            <div className="absolute -right-3 -top-3 h-20 w-20 rounded-full border border-orange-500/20" />
-
-            {/* =================================================== */}
-            {/* IMAGE CARD */}
-            {/* =================================================== */}
+            <div className="absolute -right-3 -top-3 hidden h-20 w-20 rounded-full border border-orange-500/20 sm:block" />
 
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-1.5 shadow-2xl sm:p-2">
 
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl lg:aspect-[5/4]">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-xl sm:aspect-[4/3] lg:aspect-[5/4]">
 
-                {/* Yerawada Tech Park Image */}
                 <Image
                   src="/images/YerwadaTech.jpeg"
                   alt="Yerawada Tech Park commercial project"
@@ -211,15 +178,9 @@ export default function Hero() {
                   sizes="(max-width: 1024px) 100vw, 55vw"
                 />
 
-                {/* Dark Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
 
-                {/* ================================================= */}
-                {/* IMAGE LABEL */}
-                {/* ================================================= */}
-
                 <div className="absolute left-3 top-3 sm:left-5 sm:top-5">
-
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-slate-950/60 px-3 py-1.5 text-[11px] font-semibold text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
 
                     <Building2 className="h-4 w-4 text-orange-400" />
@@ -227,12 +188,7 @@ export default function Hero() {
                     Commercial Project
 
                   </div>
-
                 </div>
-
-                {/* ================================================= */}
-                {/* IMAGE CONTENT */}
-                {/* ================================================= */}
 
                 <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8">
 
@@ -245,9 +201,8 @@ export default function Hero() {
                   </h2>
 
                   <p className="mt-1 max-w-lg text-xs leading-5 text-white/75 sm:mt-2 sm:text-sm sm:leading-6">
-                    A commercial project environment where
-                    reliable fire protection and safety systems
-                    play a critical role.
+                    A commercial project environment where reliable fire
+                    protection and safety systems play a critical role.
                   </p>
 
                 </div>
@@ -256,20 +211,15 @@ export default function Hero() {
 
             </div>
 
-            {/* ===================================================== */}
-            {/* FLOATING CREDIBILITY CARD */}
-            {/* ===================================================== */}
-
+            {/* Floating card */}
             <div className="absolute -bottom-6 -left-5 hidden rounded-xl border border-white/10 bg-slate-900/95 p-4 shadow-2xl backdrop-blur-xl sm:block">
 
               <div className="flex items-center gap-3">
 
-                {/* Icon */}
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-orange-500/15">
                   <ShieldCheck className="h-6 w-6 text-orange-500" />
                 </div>
 
-                {/* Text */}
                 <div>
                   <p className="text-xs text-slate-400">
                     Fire Protection

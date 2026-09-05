@@ -36,6 +36,6 @@ export default function Home() {
       <Contact />
       <Footer />
       <WhatsAppButton />
-    </div>
+    </div> 
   );
 }
